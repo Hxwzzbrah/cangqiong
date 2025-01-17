@@ -36,7 +36,7 @@
                 id_Number = #{idNumber},
             </if>
             <if test="status!=null">
-                status = #{status}
+                status = #{status},
             </if>
             <if test="updateTime!=null">
                 update_Time = #{updateTime},
@@ -44,7 +44,7 @@
             <if test="updateUser!=null">
                 update_User = #{updateUser},
             </if>
-            where id = #{id}
         </set>
+        where id = #{id}
     </update>
 </mapper>
